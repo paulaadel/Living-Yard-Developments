@@ -1,0 +1,913 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.myContainer
+{
+    margin: auto;
+    padding: 100px;
+}
+header nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    z-index: 99999999999999999999999999999;
+    width: 100%;
+}
+header nav .menuOpener
+{
+display: none !important;
+}
+header nav ul li a{
+    position: relative;
+}
+
+header ul li a::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background-color:#FFFFFF;
+    transition: all .4s;
+}
+header ul li a:hover::after{
+    width: 100%;
+}
+header nav h1{
+    font-size: 18px;
+}
+header nav .seclog{
+    max-width: 50px;
+    max-height: 50px;
+    display: none;
+}
+header nav .seclog img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.home
+{
+    width: 100%;
+    height: 100%!important;
+    position: relative;
+}
+.home .logo
+{
+    position: absolute;
+    top: 5%;
+    left: 43%;
+    z-index: 9999;
+    max-width: 180px;
+    max-height: 180px;
+}
+.home .faded img
+{
+    width: 100%;
+    height: 100vh !important;
+}
+.home .faded .slick-dots
+{
+    bottom: 25%;
+    z-index: 999;
+}
+.home .faded .slick-dots li{
+    display: inline-block;
+    background: transparent;
+    border: 2px solid white;
+    margin: 10px 10px;
+    width: 15px;
+    height: 15px;
+}
+.home .faded .slick-dots li.slick-active
+{
+    background: white;
+}
+.home .faded {
+    margin: 0px !important;
+}
+.home .content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 40% !important;
+}
+.home .content h1{
+    letter-spacing: 11.2px;
+    color: #FFFFFF;
+    font-size: 150px;
+    font-weight: 800;
+    text-align: center !important;
+}
+.home .content h1:hover{
+    color: transparent;
+    -webkit-text-stroke: 3px white;
+}
+.home .content p{
+    color: #FFFFFF;
+    font-size: 22px;
+    text-align: center;
+}
+.home .ico
+{
+    position: fixed;
+    bottom: 10px;
+    left: 15px;
+    padding: 5px;
+    display: inline;
+    z-index: 999999999999999999999999999999999999999999;
+    width: 60px;
+    text-align: center;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.home .ico i{
+    z-index: 999999999999999999999999999999999999;
+}
+.home .ico:hover
+{
+    background-color: #7B5F39 !important;
+}
+.home .ico:hover span{
+    color: #fff;
+}
+.home .ico i img{
+    height: 35px;
+    align-items: center;
+    text-align: center;
+}
+.home .ico span{
+    display: block;
+    color: #7B5F39;
+    font-size: 12px;
+}
+.home .ico2
+{
+    position: absolute;
+    bottom: 5px;
+    padding: 20px;
+    right: 45%;
+
+}
+.home .text3
+{
+    position: absolute;
+    bottom: 5px;
+    padding: 20px;
+    right: 10px;
+    color: #FFFFFF;
+font-size: 18px;
+}
+.home .text3 span{
+display: block;
+
+}
+.home .text3 .number
+{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.about
+{
+    background: url(../Assets/About\ background.png) no-repeat;
+    background-size:100% 100%;
+}
+.about .slide
+{
+    width: 90% !important;
+    position: relative;
+} 
+.about .slide span
+{
+    cursor: pointer;
+}
+
+.about .slide .change-right
+{
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+}
+.about .slide .change-left
+{
+    position: absolute;
+    bottom: -20px;
+    right: 30px;
+}
+.about h2{
+    color: #002445;
+    text-transform: uppercase;
+}
+.about p{
+    color: #000B14;
+    font-size: 20px;
+}
+.about .projects{
+    max-width: 200px !important;
+    margin: 0 40px;
+}
+.loftRes
+{
+    background-color: #FAF8F5;
+}
+.loftRes .loftResLogo
+{
+    position: relative;
+}
+.loftRes .loftResLogo img
+{
+    max-width: 150px;
+}
+.loftRes .loftResLogo::after
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 90%;
+    background-color: #002445;
+}
+.leftResContent
+{
+    position: relative;
+}
+.leftResContent .loftResImg{
+    max-width: 400px;
+    position:absolute;
+    top: -35%;
+}
+.loftRes .loftResContent h2{
+    color: #002445;
+    text-transform: uppercase;
+
+}
+.loftRes .leftResContent p
+{
+    color: #000B14;
+    font-size: 20px;
+}
+.loftRes a{
+    color: #7B5F39;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+
+}
+.loftRes a span
+{
+    transition: all .3s !important;
+    padding: 5px !important;
+    font-weight: 600;
+}
+.loftRes .coloured
+{
+    color: #002445;
+}
+.loftRes a::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background-color: #7B5F39;
+}
+.loftRes .coloured::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background-color: #002445;
+}
+.loftRes a:hover{
+    color:#002445;
+}
+.loftRes a:hover span
+{
+    padding: 5px;
+    background-color: rgba(0,36,69, 0.4);
+}
+.loftRes .coloured:hover{
+    color: #7B5F39;
+}
+.loftRes a:hover .coloured span
+{
+    padding: 5px;
+    background-color: rgba(123,95,57, 0.8);
+}
+.loftDown
+{
+    background: #FAF8F5;
+}
+.loftDown .loftDownLogo
+{
+    position: relative;
+}
+.loftDown .loftDownLogo img
+{
+    max-width: 150px;
+    margin-left: auto !important;
+    display: block !important;
+}
+.loftDown .loftDownLogo::before
+{
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 90%;
+    background-color: #002445;
+}
+.loftDownContent
+{
+    position: relative !important;
+}
+.loftDownImg
+{
+    max-width: 400px;
+    position:absolute;
+    top: -35%;
+}
+.loftDown a span
+{
+    transition: all .3s !important;
+    padding: 5px !important;
+    font-weight: 600;
+}
+.loftDown a{
+    color: #7B5F39;
+    font-size: 20px;
+    font-weight: 600;  
+    position: relative;  
+}
+.loftDown a::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background-color: #7B5F39;
+}
+.loftDown  :hover{
+    color:#002445;
+}
+.loftDown a:hover span
+{
+    
+    background-color: rgba(2, 38, 71, 0.4);
+}
+.loftCenter
+{
+    background-color: #FAF8F5;
+}
+.loftCenter .loftCenLogo
+{
+    position: relative;
+}
+.loftCenter .loftCenLogo img
+{
+    max-width: 150px;
+}
+.loftCenter .loftCenLogo::after
+{
+    content: "";
+    position: absolute;
+    top: 45%;
+    height: 2px;
+    width: 90%;
+    background-color: #002445;
+}
+.leftCenContent
+{
+    position: relative;
+}
+.leftCenContent .loftCenImg{
+    max-width: 400px;
+    position:absolute;
+    top: -55%;
+}
+.loftCenter .loftCenContent h2{
+    color: #002445;
+    text-transform: uppercase;
+
+}
+.loftCenter .leftCenContent p
+{
+    color: #000B14;
+    font-size: 20px;
+}
+.loftCenter a{
+    color: #7B5F39;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+.loftCenter a span
+{
+    transition: all .3s !important;
+    padding: 5px !important;
+    font-weight: 600;
+}
+
+.loftCenter a::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background-color: #7B5F39;
+} 
+.loftCenter a:hover ::before{
+    content: "";
+    width: 20px;
+    height: 3px;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background-color: #002445 !important;
+}
+.loftCenter a:hover{
+    color:#002445;
+}
+.loftCenter a:hover span
+{
+    padding: 5px;
+    background-color: rgba(0,36,69, 0.4);
+}
+.contactUS
+{
+position: relative;
+z-index: 99999999999999999999999999999999;
+background-color: #FFFFFF;
+overflow-x: hidden;
+}
+.contactUS .map{
+    height: 35% !important;
+}
+.contactUS .map iframe{
+    height: 100%;
+    width: 100%;
+}
+.contactUS .info a{
+    color: #002445;
+    transition: all .5s;
+}
+.contactUS .info a:hover{
+    color: #7B5F39;
+}
+.contactUS .data .info .hotline
+{
+    border-left: solid 3px #7B5F39;
+    height: 50%;
+}
+.contactUS .form{
+background-color: #002445;
+position: relative;
+}
+form .formItem{
+    display: block;
+    padding: 50px 70px !important;
+  }
+  form .formItem .input-data{
+    width: 100%;
+    position: relative;
+  }
+  .input-data input{
+    display: block;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid #fff;
+    background-color: #002445;
+  }
+  .input-data input:focus ~ label
+  {
+    transform: translateY(-20px);
+    font-size: 18px;
+    color: #7B5F39;
+  }
+  .input-data label{
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    color: #fff;
+    transition: all .4s;
+  }
+.subBtn button{
+ color: #7B5F39;
+ background-color: #FFFFFF;
+ border-radius: 0;
+ width: 35%;
+ padding: 10px;
+}
+.subBtn button:hover
+{
+    color: #FFFFFF;
+ background-color:#7B5F39;
+}
+form .text
+{
+    position: absolute;
+    transform: rotate(270deg);
+    left: -40px;
+    bottom: 150px;
+}
+form .text p{
+    position: relative;
+}
+form .text p::after{
+content: "";
+background-color: white;
+width: 100%;
+height: 2px;
+top: 50%;
+position: absolute;
+}
+
+footer
+{
+
+    position: relative;
+    z-index: 9999999999999999999999999;
+    background-color: #FFFFFF;
+}
+footer p {
+    color: #7B5F39;
+}
+footer p a
+{
+    text-decoration: none;
+    color: #002445;
+}
+
+footer p a:hover
+{
+    color: #7B5F39;
+}
+.colordNav
+{
+    background-color: #FAF8F5 !important;
+    padding: 5px !important;
+    z-index: 999999999999999999999999999999;
+}
+.colordNav .navbar-brand
+{
+    color: #002445 !important;
+}
+.colordNav ul li a{
+    color: #7B5F39 !important;
+}
+header .colordNav ul li a::after
+{
+    background-color: #7B5F39 !important;
+}
+
+@media screen and (max-width:1024px) 
+{
+
+    .navbar ul 
+    {
+        display: none;
+    } 
+    
+    header nav .menuOpener
+    {
+    display: inline !important;
+    position: fixed !important;
+    top: 5%;
+    right: 10px;
+    color: #002445;
+    cursor: pointer;
+    background-color: #FAF8F5;
+    padding: 8px;
+    border-radius: 5px;
+    z-index: 99999999999999999999999999999999999 !important;
+    }
+    header .navbar a span {
+        display: block;
+    }
+    
+    .home .content h1
+    {
+        font-size: 100px !important; 
+        text-align: center !important; 
+    }
+    .home.content .log
+    {
+        width: 100px;
+    }
+    .about{
+        text-align: center !important;
+    }
+    .about h2
+    {
+        font-size: 50px !important;
+    }
+    .about img
+    {
+        width: 200px;
+     
+    }
+    .about p{
+        font-size: 18px !important;
+    }
+    .about .projects
+    {
+        display: inline-block !important;
+        max-width: 130px !important;
+        margin: 0 0;
+    }
+    .leftResContent .loftResImg
+    {
+        position: relative;
+        top: 0;
+        display: block;
+        text-align: center;
+        
+    }
+    .loftRes .loftResLogo::after    
+    {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 50%;
+    background-color: #002445;
+    }
+    .leftResContent .loftResImg img
+     {
+    max-width: 300px;
+    }
+    .loftDown .loftDownLogo
+    {
+    position: relative;
+    }
+
+    .loftDown .loftDownLogo::before
+    {
+    content: "";
+    position: absolute;
+    top: 65%;
+    height: 2px;
+    width: 50%;
+    background-color: #002445;
+    }
+    .loftDownImg {
+        max-width: 300px;
+        position: relative;
+    }
+    
+    .leftCenContent .loftCenImg
+    {
+        position: relative;
+        top: 0;
+        display: block;
+        text-align: center;
+        
+    }
+    .loftCenter .loftCenLogo::after    
+    {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 50%;
+    background-color: #002445;
+    }
+    .leftCenContent .loftCenImg img
+     {
+    max-width: 300px;
+    position:relative;
+    }
+    footer{
+        text-align: center !important;
+        padding: 0 !important;
+    }
+    .fixedForm {
+        position:fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        z-index: 999999999999999999999999999999999 !important;
+        transition: all .5s;
+    }
+    .inquiryForm
+    {
+        width: 100% !important;
+        z-index: 99999999999999;
+        position: absolute;
+    }
+    form .form-Item
+{
+    display: block;
+    padding: 30px 35px !important;
+}
+}
+@media screen and (max-width:768px)
+{
+    .home .content h1
+    {
+        font-size: 90px !important; 
+        text-align: center !important;
+    }
+    .home .ico2{
+        display: none !important;
+    }
+    
+}
+.fixedForm{
+    position: fixed;
+    bottom: 30px;
+    left: 50px;
+    width: 100%;
+    z-index: 999999999999;
+    display: none;
+    transition: all .5s;
+}
+.inquiryForm
+{
+    background-color: #FAF8F5CC;
+    position: relative;
+    width: 35%;
+    padding: 20px; 
+    z-index: 9999999999999999999999999999999999999 !important;  
+}
+.inquiryForm h4{
+    color: #7B5F39;
+    position: relative;
+    padding: 8px;
+}
+.close
+{
+position: absolute;
+width: 25px;
+right: 20px;
+top: 15px;
+cursor: pointer;
+
+}
+.inquiryForm h4:after{
+content: "";
+width: 20px;
+height: 3px;
+position: absolute;
+top: 50%;
+background-color: #7B5F39;
+}
+form .form-Item
+{
+    display: block;
+    padding: 40px 50px !important;
+}
+  form .form-Item .inputData
+{
+    width: 100%;
+    position: relative;
+}
+  .inputData input
+  {
+    display: block;
+    background-color: transparent;
+    color: #002445;
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid #002445;
+  }
+  .inputData input:focus ~ label
+  {
+    transform: translateY(-20px);
+    font-size: 18px;
+    color: #002445;
+  }
+  .inputData label{
+    position: absolute;
+    bottom: 10px;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    color: #002445;
+    transition: all .4s;
+  }
+.sub-Btn button{
+ color: #7B5F39;
+ background-color: #FFFFFF;
+ border:none;
+ width: 20%;
+ padding: 10px;
+}
+.sub-Btn button:hover
+{
+    color: #FFFFFF;
+ background-color:#7B5F39;
+}
+.dropdown button
+{
+    color: #002445 !important;
+    border: none;
+    border-radius: none !important;
+}
+.dropdown
+{
+    padding: 30px 30px !important;
+}
+.dropdown::after
+{
+content: "";
+width: 100%;
+color: #002445 !important;
+border-bottom: 2px solid;
+display: block;
+}
+.drop .dropBut
+{
+    color: #FFFFFF !important;
+    border: none;
+    border-radius: none !important;
+}
+.drop
+{
+    padding: 30px 60px !important;
+}
+.dropdown button{
+    text-align: start;
+    width: 100%;
+    position: relative;
+}
+.drop button{
+    text-align: start;
+    width: 100%;
+    position: relative;
+}
+.drop::after
+{
+content: "";
+width: 100%;
+color: #FFFFFF !important;
+border-bottom: 2px solid;
+display: block;
+}
+.dropdown-toggle::after{
+    position: absolute !important;
+    right:0;
+}
+.small-menu
+{
+    background-color: #f7f5f2;
+    position: fixed;
+    z-index: 9999999999999999999999999999999999999999999999;
+    top: 0;
+    left: 0;
+    transition: all .5s;
+    height: 100vh;
+    width: 100% !important;
+    display: none;
+}
+.small-menu .loging{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.small-menu .closing
+{
+    position: absolute;
+    right: 3%;
+    top: 4%;
+    cursor: pointer;
+}
+.small-menu ul li
+{
+list-style: none;
+}
+.small-menu ul li a
+{
+color: #7B5F39;
+}
+.small-menu ul li a:hover
+{
+    color: #002445;
+}
+.small-menu .callus
+{
+    position: absolute;
+    right: 2%;
+    bottom: 3%;
+    
+}
+.small-menu .callus a{
+    color: #002445;
+
+}
